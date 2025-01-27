@@ -1,0 +1,103 @@
+.auth_container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.253);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.close_auth {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	border: none;
+	background: none;
+	font-size: 1.5rem;
+	cursor: pointer;
+	&:hover {
+		color: blue;
+	}
+}
+
+.auth_content {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: #f0f0f0;
+	width: 400px;
+	border-radius: 20px;
+	height: 600px;
+}
+
+.name_form {
+	font-size: 1.3rem;
+	margin-bottom: 40px;
+}
+
+.inputs {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.input_box {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	text-align: left;
+	gap: 3px;
+}
+
+.label_auth {
+	font-size: 0.9rem;
+}
+
+.input_auth {
+	width: 250px;
+	height: 30px;
+	border-radius: 6px;
+	outline: none;
+	border: 1px solid grey;
+	padding-left: 5px;
+	padding-right: 5px;
+	box-sizing: border-box;
+}
+
+.text_reg_log {
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
+}
+
+.text_ask {
+	font-size: 1rem;
+}
+
+.change_reg_log {
+	color: blue;
+	padding: 0;
+	font-size: 1rem;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.btn_send_form_auth {
+	margin-top: 20px;
+	padding: 10px 20px;
+	border-radius: 8px;
+	background-color: #35b9f7;
+	border: none;
+	cursor: pointer;
+	transition: 300ms;
+	&:hover {
+		background: #35baf7b6;
+	}
+}
