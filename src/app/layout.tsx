@@ -1,3 +1,5 @@
+import Header from '@/components/Header'
+import ProviderWrapper from '@/lib/StoreWrapper'
 import type { Metadata } from 'next'
 import './globals.css'
 
@@ -12,10 +14,13 @@ export default function RootLayout({
 	children: React.ReactNode
 }>) {
 	return (
-		<html lang='ru'>
-			<body>
-				<div className=''>{children}</div>
-			</body>
-		</html>
+		<ProviderWrapper>
+			<html lang='ru'>
+				<body>
+					<Header />
+					{children}
+				</body>
+			</html>
+		</ProviderWrapper>
 	)
 }

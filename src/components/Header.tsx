@@ -33,10 +33,10 @@ const Header = () => {
 			<header className={styles.header}>
 				<div className={styles.links}>
 					<Link href='/' className={styles.link}>
-						{isRussian ? 'Главная' : 'Home'}
+						{isRussian ? 'Home' : 'Главная'}
 					</Link>
 					<Link href='/news' className={styles.link}>
-						{isRussian ? 'Новости' : 'News'}
+						{isRussian ? 'News' : 'Новости'}
 					</Link>
 				</div>
 				<Link className={styles.logo_container} href='/'>
@@ -47,9 +47,9 @@ const Header = () => {
 						className={styles.btn_profile_header}
 						onClick={handleProfileClick}
 					>
-						{isRussian ? 'Профиль' : 'Profile'}
+						{isRussian ? 'Profile' : 'Профиль'}
 					</button>
-					<SwitchLang toggle={() => dispatch(toggleLanguage())} />
+					<SwitchLang toggleLanguage={() => dispatch(toggleLanguage())} />
 				</div>
 			</header>
 			<Auth isOpen={isAuthModalOpen} closeModal={closeModal} />
