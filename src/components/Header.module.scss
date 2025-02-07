@@ -52,3 +52,16 @@
 		color: grey;
 	}
 }
+
+@media screen and (max-width: 375px) {
+	.header {
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.links {
+		display: none;
+	}
+}
