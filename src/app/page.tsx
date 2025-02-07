@@ -2,6 +2,7 @@
 // Images
 import comment from '@/public/comment.svg'
 import image from '@/public/image.jpeg'
+import like from '@/public/like.svg'
 import saved from '@/public/saved.svg'
 import { Posts } from '@/type/type'
 import axios from 'axios'
@@ -24,7 +25,6 @@ export default function Home() {
 		}
 		fetchData()
 	}, [])
-	const [isHovered, setIsHovered] = useState(false)
 
 	return (
 		<div className={styles.home}>
@@ -60,33 +60,8 @@ export default function Home() {
 								<p className={styles.view}>1023 view</p>
 							</div>
 							<div className={styles.btn_like_com_sav}>
-								<button
-									className={styles.btn_like}
-									onMouseEnter={() => setIsHovered(true)}
-									onMouseLeave={() => setIsHovered(false)}
-								>
-									<svg
-										className={styles.btn_like_image}
-										width='20'
-										height='18'
-										viewBox='0 0 20 18'
-										fill={isHovered ? 'red' : 'none'}
-										xmlns='http://www.w3.org/2000/svg'
-									>
-										<g clipPath='url(#clip0_30789_32157)'>
-											<path
-												d='M10 4.15428C8 -0.540161 1 -0.0401611 1 5.95987C1 11.9599 10 16.9601 10 16.9601C10 16.9601 19 11.9599 19 5.95987C19 -0.0401611 12 -0.540161 10 4.15428Z'
-												stroke={isHovered ? 'red' : '#818181'}
-												stroke-linecap='round'
-												stroke-linejoin='round'
-											/>
-										</g>
-										<defs>
-											<clipPath id='clip0_30789_32157'>
-												<rect width='20' height='18' fill='white' />
-											</clipPath>
-										</defs>
-									</svg>
+								<button className={styles.btn_like}>
+									<Image src={like} alt='like_btn' />
 								</button>
 								<button className={styles.btn_com}>
 									<Image

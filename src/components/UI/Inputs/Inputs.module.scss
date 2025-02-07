@@ -1,0 +1,53 @@
+.inputs {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	margin-bottom: 20px;
+}
+
+.input_box {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	text-align: left;
+	gap: 3px;
+}
+
+.input,
+.input_pass {
+	width: 250px;
+	height: 30px;
+	border-radius: 6px;
+	outline: none;
+	border: 1px solid grey;
+	padding-left: 5px;
+	padding-right: 5px;
+	box-sizing: border-box;
+}
+.input_pass {
+	padding-right: 40px;
+}
+
+.label {
+	font-size: 0.9rem;
+}
+
+.password_wrapper {
+	position: relative;
+	width: 250px;
+	height: 30px;
+}
+
+.btn_show_hide_pass {
+	position: absolute;
+	background: none;
+	border: none;
+	cursor: pointer;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	.show_hide_pass_image {
+		width: 20px;
+		height: 20px;
+	}
+}
