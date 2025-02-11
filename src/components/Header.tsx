@@ -38,6 +38,9 @@ const Header = () => {
 					<Link href='/news' className={styles.link}>
 						{isRussian ? 'News' : 'Новости'}
 					</Link>
+					<Link href='/users' className={styles.link}>
+						{isRussian ? 'Users' : 'Пользователи'}
+					</Link>
 				</div>
 				<Link className={styles.logo_container} href='/'>
 					<p className={styles.logo_text}>NightBlog</p>

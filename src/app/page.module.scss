@@ -42,6 +42,10 @@
 	gap: 7px;
 	align-items: center;
 	cursor: pointer;
+	text-decoration: none;
+	&:hover {
+		color: #000000a4;
+	}
 }
 
 .image_user {

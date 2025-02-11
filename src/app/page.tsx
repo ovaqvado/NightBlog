@@ -7,6 +7,7 @@ import saved from '@/public/saved.svg'
 import { Posts } from '@/type/type'
 import axios from 'axios'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import styles from './page.module.scss'
 
@@ -32,7 +33,7 @@ export default function Home() {
 				{posts.map(post => (
 					<div key={post.id} className={styles.post_box}>
 						<div className={styles.header_post}>
-							<div className={styles.user_img_nickname}>
+							<Link href='/profile' className={styles.user_img_nickname}>
 								<Image
 									className={styles.image_user}
 									src={image}
@@ -41,7 +42,7 @@ export default function Home() {
 									alt='img_profile'
 								/>
 								<p className={styles.nickname_user}>Josh Tyson</p>
-							</div>
+							</Link>
 							<button className={styles.btn_follow}>Follow</button>
 						</div>
 						<Image className={styles.post_image} src={image} alt='photo' />
